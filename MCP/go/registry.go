@@ -1,0 +1,38 @@
+package main
+
+import (
+	"github.com/apigee-registry-api/mcp-server/config"
+	"github.com/apigee-registry-api/mcp-server/models"
+	tools_projects "github.com/apigee-registry-api/mcp-server/tools/projects"
+)
+
+func GetAll(cfg *config.APIConfig) []models.Tool {
+	return []models.Tool{
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_rollbackTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_runtime_testiampermissionsTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_artifacts_getcontentsTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_tagrevisionTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_operations_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_instances_createTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_runtime_getiampolicyTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_runtime_setiampolicyTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_deleterevisionTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_listrevisionsTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_createTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_createTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_createTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_operations_deleteTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_operations_getTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_versions_specs_patchTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_artifacts_replaceartifactTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_artifacts_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_artifacts_createTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_deployments_listTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_apis_deployments_createTool(cfg),
+		tools_projects.CreateApigeeregistry_projects_locations_operations_cancelTool(cfg),
+	}
+}
